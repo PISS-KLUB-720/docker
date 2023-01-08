@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  dotnet-service:
+    image: dotnet-service
+    ports:
+      - 80:80
+    depends_on:
+      - mysql-piss
+
+  mysql-piss:
+    image: mysql-piss
+    ports:
+      - 3306:3306
