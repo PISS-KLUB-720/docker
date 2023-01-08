@@ -1,4 +1,5 @@
-# docker build -t mysql-piss
+# docker build -t mysql-piss .
+# docker run -d -p 3306:3306 mysql-piss
 
 FROM mysql:8
 
